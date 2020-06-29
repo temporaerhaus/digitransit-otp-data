@@ -1,0 +1,7 @@
+version: 1.5.0-pre-mfdz-1.0
+major: 1
+minor: 5
+patch: 0
+qualifier: pre-mfdz-1.0
+commit: 6bf6f906b8293a0d22bdbe487f06e5d01cfad614
+
