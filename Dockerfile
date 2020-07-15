@@ -1,5 +1,6 @@
-ARG OTP_VERSION=6bf6f906b8293a0d22bdbe487f06e5d01cfad614
-FROM mfdz/opentripplanner:$OTP_VERSION AS otp
+#ARG OTP_VERSION=6bf6f906b8293a0d22bdbe487f06e5d01cfad614
+#FROM mfdz/opentripplanner:$OTP_VERSION AS otp
+FROM lehrenfried/opentripplanner:latest AS otp
 
 # defined empty, so we can access the arg as env later again
 ARG OTP_VERSION
