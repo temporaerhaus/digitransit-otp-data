@@ -19,6 +19,13 @@
       "url": "https://api.openbike.ulm.dev/gbfs/",
       "frequencySec": 30,
       "network": "openbike"
+    },
+    {
+      "id": "park-api",
+      "type": "car-park",
+      "frequencySec": 120,
+      "sourceType": "park-api",
+      "url": "https://api.parkendd.de/Ulm"
     }
   ]
 }
