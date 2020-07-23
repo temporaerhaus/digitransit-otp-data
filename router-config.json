@@ -26,6 +26,15 @@
       "frequencySec": 120,
       "sourceType": "park-api",
       "url": "https://api.parkendd.de/Ulm"
+    },
+    {
+      "id": "zeus-scooter-rental",
+      "type": "bike-rental",
+      "rentalType": "free-floating",
+      "sourceType": "gbfs",
+      "url": "https://gbfs.radforschung.org/zeus/",
+      "frequencySec": 120,
+      "network": "zeus"
     }
   ]
 }
