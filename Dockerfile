@@ -1,4 +1,4 @@
-ARG OTP_VERSION=3185a672c9030cc0d16c1b846ae9c9cc28cd08bf
+ARG OTP_VERSION=660c044670901f298a925bcabbf4122c56b164d5
 FROM mfdz/opentripplanner:$OTP_VERSION AS otp
 
 # defined empty, so we can access the arg as env later again
