@@ -35,6 +35,15 @@
       "url": "https://gbfs.radforschung.org/zeus/",
       "frequencySec": 120,
       "network": "zeus"
-    }
+    },
+    {
+      "id": "bird-scooter-rental",
+      "type": "bike-rental",
+      "rentalType": "free-floating",
+      "sourceType": "gbfs",
+      "url": "https://mds.bird.co/gbfs/ulm/",
+      "frequencySec": 120,
+      "network": "bird"
+    } 
   ]
 }
