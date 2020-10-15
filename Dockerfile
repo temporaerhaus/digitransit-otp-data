@@ -22,7 +22,7 @@ RUN java -jar otp-shaded.jar --version | tee build/version.txt
 RUN echo "image: mfdz/opentripplanner:$OTP_VERSION" >> build/version.txt
 
 # build
-RUN java -Xmx10G -jar otp-shaded.jar --build build/$ROUTER_NAME | tee build/build.log
+RUN java -Xmx14G -jar otp-shaded.jar --build build/$ROUTER_NAME | tee build/build.log
 
 # package: graph and config into zip
 RUN sh -c 'cd /opt/opentripplanner/build/; export VERSION=$(grep "version:" version.txt | cut -d" " -f2); zip graph-$ROUTER_NAME-$VERSION.zip $ROUTER_NAME/Graph.obj $ROUTER_NAME/router-*.json'
