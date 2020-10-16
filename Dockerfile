@@ -1,4 +1,4 @@
-ARG OTP_VERSION=1481b1eb089ea3a3b40a8d098ab263b0ff959968
+ARG OTP_VERSION=fe76ec41335f86acc5ea755a15cb4c3d4ea846d7
 FROM mfdz/opentripplanner:$OTP_VERSION AS otp
 
 # defined empty, so we can access the arg as env later again
@@ -22,7 +22,7 @@ RUN java -jar otp-shaded.jar --version | tee build/version.txt
 RUN echo "image: mfdz/opentripplanner:$OTP_VERSION" >> build/version.txt
 
 # build
-RUN java -Xmx14G -jar otp-shaded.jar --build build/$ROUTER_NAME | tee build/build.log
+RUN java -Xmx31G -jar otp-shaded.jar --build build/$ROUTER_NAME | tee build/build.log
 
 # package: graph and config into zip
 RUN sh -c 'cd /opt/opentripplanner/build/; export VERSION=$(grep "version:" version.txt | cut -d" " -f2); zip graph-$ROUTER_NAME-$VERSION.zip $ROUTER_NAME/Graph.obj $ROUTER_NAME/router-*.json'
