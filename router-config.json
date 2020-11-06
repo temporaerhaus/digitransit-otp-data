@@ -32,7 +32,7 @@
       "type": "bike-rental",
       "rentalType": "free-floating",
       "sourceType": "gbfs",
-      "url": "https://gbfs.radforschung.org/zeus/",
+      "url": "https://api.digitransit.im.verschwoerhaus.de/zeus-gbfs/",
       "frequencySec": 120,
       "network": "zeus"
     },
